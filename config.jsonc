@@ -1,0 +1,37 @@
+{
+  "include": [
+    "/usr/share/sway/templates/waybar/config.jsonc"
+  ],
+
+  "custom/weather": {
+    "icon-size": 42,
+    "format": "{icon} {}",
+    "tooltip": true,
+    "interval": 3600,
+    // accepts a location as an argument (in quotes)
+    "exec": "/usr/share/sway/scripts/weather.py -c \"Prague\"",
+    "return-type": "json",
+    "format-icons": {
+        "Unknown": "",
+        "Cloudy": "摒",
+        "Fog": "",
+        "HeavyRain": "",
+        "HeavyShowers": "",
+        "HeavySnow": "",
+        "HeavySnowShowers": "ﰕ",
+        "LightRain": "",
+        "LightShowers": "",
+        "LightSleet": "",
+        "LightSleetShowers": "",
+        "LightSnow": "",
+        "LightSnowShowers": "ﭽ",
+        "PartlyCloudy": "",
+        "Sunny": "",
+        "ThunderyHeavyRain": "ﭼ",
+        "ThunderyShowers": "",
+        "ThunderySnowShowers": "",
+        "VeryCloudy": ""
+    }
+  }
+}
+
