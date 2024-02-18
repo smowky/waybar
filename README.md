@@ -1,0 +1,2 @@
+# waybar
+dotfiles for waybar
